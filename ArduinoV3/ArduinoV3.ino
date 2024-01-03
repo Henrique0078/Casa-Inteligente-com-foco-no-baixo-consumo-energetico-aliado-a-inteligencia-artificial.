@@ -46,7 +46,7 @@ void loop() {
   String json;
   Serial.println("Valor do sensor: " + String(valorSensor));
 
-  if (valorSensor < 100) {
+  if (valorSensor < 300) {
     Serial.println("Desligado");
     estadoAtual = false;
   } else {         

@@ -6,7 +6,7 @@ CREATE TABLE dataset (
 	id_ds int NOT NULL AUTO_INCREMENT,
     name_room_ds VARCHAR(100) NULL,
     status_ds boolean DEFAULT FALSE,
-    created_at_ds TIMESTAMP DEFAULT current_timestamp,
+    created_at_ds TIMESTAMP DEFAULT (CURRENT_TIMESTAMP - INTERVAL 3 HOUR),
     weekday_ds VARCHAR(20) NULL,
     month_ds VARCHAR(30) NULL,
     PRIMARY KEY(id_ds)
